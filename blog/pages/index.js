@@ -10,6 +10,7 @@ export default function Home() {
       <main>
         <Navbar />
         <div>
+          {/* HOMEpAGE */}
           <Hero />
           <About />
           <Projects />
