@@ -44,14 +44,30 @@ export async function getStaticProps() {
   };
 }
 
-export default function Blog() {
+export default function Blog({ posts }) {
   return (
     <div>
       <Navbar />
       <div>
         <h2>Blog</h2>
       </div>
-      <div>List of Blog Posts go Here!!!</div>
+      <div>
+        {posts.map(({ id, title, slug, coverImage }) => (
+          <div key={id}>
+            <div>
+              <Image
+                src={coverImage.url}
+                alt="blog post cover image"
+                width={150}
+                height={150}
+              />
+            </div>
+            <h2>
+              <Link href={`/post/${slug}`}>{title}</Link>
+            </h2>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
