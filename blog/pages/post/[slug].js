@@ -1,13 +1,13 @@
 import Navbar from "@/components/Navbar";
 
-export default function Blog() {
+export default function Post() {
   return (
     <div>
       <Navbar />
       <div>
-        <h2>Blog</h2>
-        <div>List of Blog post go here!</div>
+        <h2>Dynamic post content</h2>
       </div>
+      <div>Individual post content</div>
     </div>
   );
 }
