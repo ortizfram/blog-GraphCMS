@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="w-screen grid grid-cols-2 p-2">
+    <div className="w-screen grid grid-cols-2 p-2 bg-white">
       <div>
         <Link href="/">Logo</Link>
       </div>

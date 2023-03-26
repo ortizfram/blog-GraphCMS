@@ -49,7 +49,7 @@ export default function Blog({ posts }) {
     <div>
       <Navbar />
       <div>
-        <h2>Blog</h2>
+        <h2 className="font-bold text-6xl mb-8">Blog</h2>
       </div>
       <div>
         {posts.map(({ id, title, slug, coverImage }) => (
